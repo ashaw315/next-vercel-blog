@@ -8,8 +8,13 @@ import utilStyles from "../styles/utils.module.css";
 const name = "Adam Shaw";
 export const siteTitle = "Adam Shaw Dev Portfolio";
 
-function Layout({ children, home }) {
-    return (
+function Layout({ 
+        children,
+        home }: {
+          children: React.ReactNode
+          home?: boolean
+        }) {
+        return (
         <div className={styles.container}>
             <Head>
                 <meta
